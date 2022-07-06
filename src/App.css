@@ -7,20 +7,30 @@
   /* Logo Home */
   /* Lista accesos */
 }
-.botonera .botonera-desc .botonera__logo {
+.botonera__logo {
   width: 18rem;
   border-radius: 20px;
 }
-.botonera .botonera-desc .botonCarrito {
+.cartWidget{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
+}
+.botonCarrito {
+  display: flex;
+}
+
+.botonCarrito p {
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   font-size: 3rem;
   line-height: auto;
   text-align: center;
   color: black;
 }
+
+
 .App {
   text-align: center;
 }
