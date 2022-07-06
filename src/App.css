@@ -1,4 +1,25 @@
-.App {
+.botonera {
+  background-color: #07236a5d; }
+  .botonera .botonera-desc {
+    max-width: 1140px;
+    margin: auto;
+    /* Logo Home */
+    /* Lista accesos */ }
+    .botonera .botonera-desc .botonera__logo {
+      width: 18rem;
+      border-radius: 20px; }
+    .botonera .botonera-desc .botonCarrito {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 3rem;
+      line-height: auto;
+      text-align: center;
+      color: black; }
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +56,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
