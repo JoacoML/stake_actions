@@ -2,6 +2,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import carrito from './assets/img/carrito.png';
 import home_logo from './assets/img/home_logo.png';
+import logo from './assets/img/logo.png';
 import './App.css';
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
 
         </div>
       </nav>
+
+      <img src={logo} className="App-logo" alt="logo" />
+
     </div>
   );
 }
