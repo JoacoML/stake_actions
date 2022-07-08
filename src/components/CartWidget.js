@@ -8,7 +8,6 @@ export const CartWidget = () => {
     <div className='cartWidget'> 
 
       <button className="btn botonCarrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-        <p id="totalCarrito">0</p>
         <img src={carrito} className="" alt="widget carrito" />
       </button>
       
