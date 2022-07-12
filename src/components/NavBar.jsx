@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import home_logo from '../assets/img/home_logo.png';
-import {CartWidget} from './CartWidget';
-import '../App.css';
+import CartWidget from './CartWidget';
+import '../styles/App.css';
 
 export const NavBar = () => {
   return (

@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../App.css';
+import '../styles/App.css';
 import carrito from '../assets/img/carrito.png';
 
 
