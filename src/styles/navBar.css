@@ -1,0 +1,11 @@
+.navBar {
+  background-color: #07236a5d;
+  flex-wrap: nowrap;
+}
+.navBar-conteiner {
+  max-width: 1140px;
+}
+.navBar__logo {
+  width: 18rem;
+  border-radius: 20px;
+}

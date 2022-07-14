@@ -1,36 +1,13 @@
-.botonera {
-  background-color: #07236a5d;
-}
-.botonera .botonera-desc {
-  max-width: 1140px;
-  margin: auto;
-  /* Logo Home */
-  /* Lista accesos */
-}
-.botonera__logo {
-  width: 18rem;
-  border-radius: 20px;
-}
-.cartWidget{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.botonCarrito {
-  display: flex;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.botonCarrito p {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  font-size: 3rem;
-  line-height: auto;
-  text-align: center;
-  color: black;
-}
-
-.itemListConteiner {
-  margin-top: 50vh;
-  margin-left: 30rem;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
