@@ -3,12 +3,3 @@
   flex-direction: row;
   margin-right: 3rem;
 }
-.botonCarrito p {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  font-size: 3rem;
-  line-height: auto;
-  text-align: center;
-  color: black;
-}
