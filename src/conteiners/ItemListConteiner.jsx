@@ -15,8 +15,6 @@ const ItemListConteiner = ({greeting}) => {
       }, 300);
     });
     getProjectList.then(res => setProjectList(res));
-  
-
   },[])
 
 
