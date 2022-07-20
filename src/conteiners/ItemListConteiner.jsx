@@ -1,7 +1,7 @@
 import '../styles/itemListConteiner.css';
 import projectStock from '../data/stock.json';
-import ItemList from '../components/ItemList';
 import React, { useState, useEffect } from 'react';
+import ItemList from '../components/ItemList';
 import ItemCount from '../components/ItemCount';
 
 const ItemListConteiner = ({greeting}) => {

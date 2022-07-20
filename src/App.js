@@ -1,13 +1,13 @@
 import NavBar from './components/NavBar';
-import ItemListConteiner from './conteiners/ItemListConteiner';
+import ItemDetailConteiner from './conteiners/ItemDetailConteiner';
 
 function App() {
   return (
     <div>
       
       <NavBar/>
-      <ItemListConteiner greeting="welcome to Actions"/>
-      
+      <ItemDetailConteiner/>
+
     </div>
   );
 }
