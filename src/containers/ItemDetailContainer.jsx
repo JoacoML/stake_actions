@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ItemDetail from '../components/ItemDetail';
-import '../styles/itemDetailConteiner.css';
+import '../styles/itemDetailContainer.css';
 
 const project = { 
   id: "0", 
@@ -13,7 +13,7 @@ const project = {
   image: "../assets/img/project1.jpg",
 };
 
-export const ItemListConteiner = () => {
+export const ItemListContainer = () => {
 
   const [data, setData] = useState({});
 
@@ -27,10 +27,10 @@ export const ItemListConteiner = () => {
   },[]);
   
   return (
-    <div className='itemDetailConteiner'>
+    <div className='itemDetailContainer'>
       <ItemDetail data={data}/>
     </div>
   );
 };
 
-export default ItemListConteiner;
+export default ItemListContainer;

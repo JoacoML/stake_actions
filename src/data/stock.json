@@ -7,6 +7,7 @@
         "risk": "AAA",
         "anualReturn": "15%",
         "cantidad": "1",
+        "type": "water",
         "img": "../img/project1.jpg"
     },
     {
@@ -17,6 +18,7 @@
         "risk": "AAB",
         "anualReturn": "20%",
         "cantidad": "1",
+        "type": "water",
         "img": "../img/project2.jpg"
     },
     {
@@ -27,6 +29,7 @@
         "risk": "ABB",
         "anualReturn": "25%",
         "cantidad": "1",
+        "type": "energy",
         "img": "../img/project3.jpg"
     },
     {
@@ -37,6 +40,7 @@
         "risk": "ABC",
         "anualReturn": "30%",
         "cantidad": "1",
+        "type": "recycling",
         "img": "../img/project4.jpg"
     },
     {
@@ -47,6 +51,7 @@
         "risk": "AAB",
         "anualReturn": "20%",
         "cantidad": "1",
+        "type": "recycling",
         "img": "../img/project5.jpg"
     },
     {
@@ -57,6 +62,7 @@
         "risk": "AAB",
         "anualReturn": "15%",
         "cantidad": "1",
+        "type": "recycling",
         "img": "../img/project6.jpg"
     },
     {
@@ -67,6 +73,7 @@
         "risk": "AAB",
         "anualReturn": "20%",
         "cantidad": "1",
+        "type": "water",
         "img": "../img/project7.jpg"
     },
     {
@@ -77,6 +84,7 @@
         "risk": "AAA",
         "anualReturn": "18%",
         "cantidad": "1",
+        "type": "energy",
         "img": "../img/project8.jpg"
     },
     {
@@ -87,6 +95,7 @@
         "risk": "AAB",
         "anualReturn": "20%",
         "cantidad": "1",
+        "type": "recycling",
         "img": "../img/project9.jpg"
     }
 ]
