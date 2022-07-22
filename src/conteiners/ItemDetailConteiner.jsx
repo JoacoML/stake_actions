@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import ItemDetail from '../components/ItemDetail';
+import '../styles/itemDetailConteiner.css';
 
 const project = { 
   id: "0", 
@@ -26,7 +27,9 @@ export const ItemListConteiner = () => {
   },[]);
   
   return (
-    <ItemDetail data={data}/>
+    <div className='itemDetailConteiner'>
+      <ItemDetail data={data}/>
+    </div>
   );
 };
 
