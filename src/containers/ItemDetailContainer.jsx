@@ -1,29 +1,23 @@
+import '../styles/itemDetailContainer.css';
+import projectStock from '../data/stock.json';
 import React, {useState, useEffect} from 'react';
 import ItemDetail from '../components/ItemDetail';
-import '../styles/itemDetailContainer.css';
+import { useParams } from 'react-router-dom';
 
-const project = { 
-  id: "0", 
-  title: "The ocean cleanup", 
-  ticker: "TOCU", 
-  price: 120, 
-  risk: "AAA", 
-  anualReturn: "15%", 
-  cantidad: "1", 
-  image: "../assets/img/project1.jpg",
-};
 
-export const ItemListContainer = () => {
+export const ItemDetailContainer = () => {
 
   const [data, setData] = useState({});
+
+  const {detailId} = useParams();
 
   useEffect(() => {
     const getData = new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(project);
+        resolve(projectStock);
       }, 300);
     });
-    getData.then(res => setData(res));
+    getData.then(res => setData(res.find(project => project.id === detailId)));
   },[]);
   
   return (
@@ -33,4 +27,4 @@ export const ItemListContainer = () => {
   );
 };
 
-export default ItemListContainer;
+export default ItemDetailContainer;
