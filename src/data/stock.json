@@ -8,7 +8,7 @@
         "anualReturn": "15%",
         "quantity": "1",
         "type": "water",
-        "img": "../img/project1.jpg"
+        "img": "https://res.cloudinary.com/dbedp2gdb/image/upload/v1659194484/project1_wdomxq.jpg"
     },
     {
         "id": "1",
@@ -19,7 +19,7 @@
         "anualReturn": "20%",
         "quantity": "1",
         "type": "water",
-        "img": "../img/project2.jpg"
+        "img": "https://res.cloudinary.com/dbedp2gdb/image/upload/v1659194484/project2_rlo8p5.jpg"
     },
     {
         "id": "2",
@@ -30,7 +30,7 @@
         "anualReturn": "25%",
         "quantity": "1",
         "type": "energy",
-        "img": "../img/project3.jpg"
+        "img": "https://res.cloudinary.com/dbedp2gdb/image/upload/v1659194485/project3_zu8ewr.jpg"
     },
     {
         "id": "3",
@@ -41,7 +41,7 @@
         "anualReturn": "30%",
         "quantity": "1",
         "type": "recycling",
-        "img": "../img/project4.jpg"
+        "img": "https://res.cloudinary.com/dbedp2gdb/image/upload/v1659194485/project4_hfyfzi.jpg"
     },
     {
         "id": "4",
@@ -52,7 +52,7 @@
         "anualReturn": "20%",
         "quantity": "1",
         "type": "recycling",
-        "img": "../img/project5.jpg"
+        "img": "https://res.cloudinary.com/dbedp2gdb/image/upload/v1659194484/project5_jrrarq.jpg"
     },
     {
         "id": "5",
@@ -63,7 +63,7 @@
         "anualReturn": "15%",
         "quantity": "1",
         "type": "recycling",
-        "img": "../img/project6.jpg"
+        "img": "https://res.cloudinary.com/dbedp2gdb/image/upload/v1659194485/project6_w855gn.jpg"
     },
     {
         "id": "6",
@@ -74,7 +74,7 @@
         "anualReturn": "20%",
         "quantity": "1",
         "type": "water",
-        "img": "../img/project7.jpg"
+        "img": "https://res.cloudinary.com/dbedp2gdb/image/upload/v1659194484/project7_hrmfhi.jpg"
     },
     {
         "id": "7",
@@ -85,7 +85,7 @@
         "anualReturn": "18%",
         "quantity": "1",
         "type": "energy",
-        "img": "../img/project8.jpg"
+        "img": "https://res.cloudinary.com/dbedp2gdb/image/upload/v1659194484/project8_l2hoof.jpg"
     },
     {
         "id": "8",
@@ -96,6 +96,6 @@
         "anualReturn": "20%",
         "quantity": "1",
         "type": "recycling",
-        "img": "../img/project9.jpg"
+        "img": "https://res.cloudinary.com/dbedp2gdb/image/upload/v1659194484/project9_awxz9f.jpg"
     }
 ]
