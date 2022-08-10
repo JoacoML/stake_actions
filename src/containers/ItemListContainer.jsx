@@ -1,27 +1,25 @@
 import '../styles/itemListContainer.css';
-import projectStock from '../data/stock.json';
 import React, { useState, useEffect } from 'react';
+import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 import ItemList from '../components/ItemList';
 import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({greeting}) => {
   
   const [projectList, setProjectList] = useState([])
-
   const {typeId} = useParams();
 
   useEffect(() =>{
-    const getProjectList = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(projectStock);
-      }, 1000);
-    });
+    const querydb = getFirestore();
+    const queryCollection = collection(querydb, 'projects');
     if (typeId) {
-      getProjectList.then(res => setProjectList(res.filter(project => project.type === typeId)));  
+      const queryFilter = query(queryCollection, where('type', '==', typeId))
+      getDocs(queryFilter)
+        .then(res => setProjectList(res.docs.map(project => ({ id: project.id, ...project.data() }))));  
     }else{
-      getProjectList.then(res => setProjectList(res));
-    }
-    
+      getDocs(queryCollection)
+        .then(res => setProjectList(res.docs.map(project => ({ id: project.id, ...project.data() }))));
+    }    
   },[typeId])
   
   return (
