@@ -12,6 +12,7 @@ export const ItemDetail = ({data}) => {
   const onAdd = (quantity) => {
     setGotoCart(true);
     addProject(data, quantity);
+    alert('Successfully added to cart. Click on ACTIONS and keep investing');
   }
 
   return (
