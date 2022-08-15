@@ -27,8 +27,6 @@ const CartProvider = ({children}) => {
     const isInCart = (id) => cart.find(project => project.id === id) ? true : false;
 
     const deleteProject = (id) => setCart(cart.filter(project => project.id !== id));
-
-    console.log('cart:', cart)
     
     return (
         <CartContext.Provider value={{

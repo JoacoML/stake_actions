@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 const ItemListContainer = ({greeting}) => {
   
-  const [projectList, setProjectList] = useState([])
+  const [projectList, setProjectList] = useState([]);
   const {typeId} = useParams();
 
   useEffect(() =>{
