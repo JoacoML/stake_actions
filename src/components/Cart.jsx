@@ -19,7 +19,7 @@ export const Cart = () => {
         phone: '351123'
       },
   
-      items: cart.map(project => ({ id: project.id, title: project.name, price: project.price, quantity: project.quantity })),
+      items: cart.map(project => ({ id: project.id, title: project.title, price: project.price, quantity: project.quantity })),
       total: totalPrice (),
     }
   
