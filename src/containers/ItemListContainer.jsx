@@ -1,4 +1,3 @@
-import '../styles/itemListContainer.css';
 import React, { useState, useEffect } from 'react';
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore';
 import ItemList from '../components/ItemList';
@@ -23,7 +22,7 @@ const ItemListContainer = ({greeting}) => {
   },[typeId])
   
   return (
-    <div className='itemListContainer'>
+    <div className='projectsList'>
       <p>{greeting}</p>
       <ItemList projectList={projectList}/>
     </div>

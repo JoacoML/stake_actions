@@ -1,0 +1,39 @@
+/*Projects*/
+
+.projectsList{
+    margin-top: 22rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .link{
+        text-decoration: none;
+        .card{
+            border-radius: 3%;
+            border: solid 0.3rem white;
+            padding: 0.5rem;
+            margin: 1rem;
+            img{
+                width: 300px;
+            }
+            .card-body{
+                padding: 1rem;
+                .card-title{
+                    font-size: 3rem;
+                    color: black;
+                    text-decoration: none;
+                    
+                }
+                .card-text{
+                    margin: 1rem;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: black;
+                    text-decoration: none;
+                }
+                .btn{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/cart.css';
 import { Link } from 'react-router-dom';
 import { useCartContext } from '../context/CartContext';
 import ItemCart from './ItemCart';
@@ -38,24 +37,26 @@ export const Cart = () => {
 
   if(cart.length === 0) {
     return(
-      <>
+      <div className='emptyCart'>
         <p>Empty cart...</p>
-        <Link to='/'> Take ACTIONS</Link>
-      </>
+        <Link className='emptyCart-shop' to='/'>
+          <button className='btn btn-primary'>Take ACTIONS</button>        
+        </Link>
+      </div>
     );
 
   }
 
   return (
-    <>
+    <div className='cartList'>
       {
         cart.map(project => <ItemCart key={project.id} project={project}/> )
       }
       <p>
-        Total: {totalPrice()}
+        Total: USD {totalPrice()}
       </p>
-      <button onClick={buyClick}>Make Invesment</button>
-    </>
+      <button className='btn btn-primary' onClick={buyClick}>Make Invesment</button>
+    </div>
   );
 }
 

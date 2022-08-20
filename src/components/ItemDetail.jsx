@@ -1,4 +1,3 @@
-import '../styles/itemDetail.css';
 import React, { useState } from 'react'
 import { useCartContext } from '../context/CartContext';
 import ItemCount from '../components/ItemCount';
@@ -16,17 +15,24 @@ export const ItemDetail = ({data}) => {
   }
 
   return (
-    <div className="card">
-      <img src={data.img} alt={data.title}/>
-      <h2>{data.title}</h2>
-      <p>Risk: {data.risk}</p>
-      <p>APY: {data.anualReturn}</p>
-      <p><strong>USD ${data.price}</strong></p>
-      {
-        goToCart
-          ? <Link to='/cart'>Finish invesment</Link>
-          : <ItemCount initial={1} stock={10} onAdd={onAdd}/>
-      }
+    <div className="card__detail">
+      <img className='card-img' src={data.img} alt={data.title}/>
+      <h2 className='card-title'>{data.title}</h2>
+      <h2 className='card-description'>{data.description}</h2>
+      <div className='card-info'>
+        <div className='card-text'>
+          <p>Risk: {data.risk}</p>
+          <p>APY: {data.anualReturn}</p>
+          <p><strong>USD ${data.price}</strong></p>
+        </div>
+        {
+          goToCart
+            ? <Link to='/cart'>
+                <button className='card-finish btn btn-primary'>Finish invesment</button>
+              </Link>
+            : <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+        }
+      </div>
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from "react";
 
 const ItemCount = ({initial, stock, onAdd}) => {
@@ -17,8 +16,8 @@ const ItemCount = ({initial, stock, onAdd}) => {
     }, [initial])
 
     return (
-        <div>
-            <div className="">
+        <div className="itemCount">
+            <div className="counter">
                 <button className="btn btn-dark" disabled={counter <= 1} onClick={subtract}>-</button>
                 <p>{counter}</p>
                 <button className="btn btn-dark" disabled={counter >= stock } onClick={add}>+</button>

@@ -1,0 +1,50 @@
+/*Detail*/
+
+.projectsDetail{
+    margin-top: 18rem;
+    .card__detail{
+        padding: 0.5rem;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        .card-img{
+            width: 40rem;
+        }
+        .card-title{
+            margin: 1rem;
+            font-size: 3rem;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            
+        }
+        .card-description{
+            margin: 1rem;
+            padding: 1rem;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+        }
+        .card-info{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .card-text{
+                padding: 1rem;
+                font-size: 2rem;
+                color: white;
+                text-decoration: none;
+            }
+            .card-finish{
+                padding: 1rem;
+                margin: 3rem;
+                font-size: 2rem;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,4 +1,3 @@
-import '../styles/itemDetailContainer.css';
 import React, {useState, useEffect} from 'react';
 import { getFirestore, doc, getDoc } from 'firebase/firestore';
 import ItemDetail from '../components/ItemDetail';
@@ -18,7 +17,7 @@ export const ItemDetailContainer = () => {
   },[detailId]);
   
   return (
-    <div className='itemDetailContainer'>
+    <div className='projectsDetail'>
       <ItemDetail data={data}/>
     </div>
   );
