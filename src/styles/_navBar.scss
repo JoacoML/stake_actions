@@ -10,7 +10,7 @@
 
 	/* Logo Home */
 	.navBar__logo {
-		width: 25rem;
+		width: 20rem;
 		border: solid 2px black;
 		border-radius: 10px;
 		padding: 3px;
@@ -22,11 +22,11 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		align-items: center;
-		justify-content: flex-start;
+		justify-content: center;
 
 		.nav__link {
-			margin: 1rem;
-			font-size: 2.5rem;
+			margin: 2rem;
+			font-size: 2rem;
 			text-decoration: none;
 			color: black;
 		}
@@ -34,12 +34,11 @@
 		.nav__cart{
 			text-decoration: none;
 			.cart__widget{
-				margin: 2rem;
-				border: solid 2px black;
+				margin: 1rem;
 				border-radius: 10px;
-				padding: 10px;
 				span {
-					font-size: 3rem;
+					margin: 1rem;
+					font-size: 2rem;
 					color: black;
 				}
 			}
