@@ -14,6 +14,7 @@ export const ItemDetailContainer = () => {
     const queryDoc = doc(querydb, 'projects', detailId);
     getDoc(queryDoc)
       .then(res => setData({ id: res.id, ...res.data() }))
+      .catch(error => alert(error))
   },[detailId]);
   
   return (

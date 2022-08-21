@@ -7,7 +7,7 @@ import  db from '../firebase/config'
 
 
 export const Cart = () => {
-  const {cart, totalPrice} = useCartContext();
+  const {cart, totalPrice, clearCart} = useCartContext();
 
   const buyClick = () => {
 
@@ -31,8 +31,9 @@ export const Cart = () => {
     }
   
     createOrderInFirestore()
-     .then(result => alert('Order created successfully ' + result.id))
-     .catch(e => alert(e))
+     .then(result => alert('Invesment created successfully. Id number ' + result.id))
+     .then (clearCart())
+     .catch(error => alert(error))
     }
 
   if(cart.length === 0) {
@@ -55,7 +56,8 @@ export const Cart = () => {
       <p>
         Total: USD {totalPrice()}
       </p>
-      <button className='btn btn-primary' onClick={buyClick}>Make Invesment</button>
+      <button className='btn btn-primary' onClick={buyClick}>Make invesment</button>
+      <button className='btn btn-danger' onClick={() => clearCart()}>Cancel invesment</button>
     </div>
   );
 }

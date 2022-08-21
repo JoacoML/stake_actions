@@ -11,7 +11,7 @@ export const ItemDetail = ({data}) => {
   const onAdd = (quantity) => {
     setGotoCart(true);
     addProject(data, quantity);
-    alert('Successfully added to cart. Click on ACTIONS and keep investing');
+    alert('Successfully added to cart.');
   }
 
   return (
@@ -24,13 +24,14 @@ export const ItemDetail = ({data}) => {
           <p>Risk: {data.risk}</p>
           <p>APY: {data.anualReturn}</p>
           <p><strong>USD ${data.price}</strong></p>
+          <p className='text-muted' >Stocks available: {data.stock}</p>
         </div>
         {
           goToCart
             ? <Link to='/cart'>
                 <button className='card-finish btn btn-primary'>Finish invesment</button>
               </Link>
-            : <ItemCount initial={1} stock={10} onAdd={onAdd}/>
+            : <ItemCount initial={1} stock={data.stock} onAdd={onAdd}/>
         }
       </div>
     </div>

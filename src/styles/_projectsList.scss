@@ -5,6 +5,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media (min-width: 700px){
+		margin-top: 17rem;
+	}
     .link{
         text-decoration: none;
         .card{

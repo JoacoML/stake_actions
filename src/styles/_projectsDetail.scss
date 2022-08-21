@@ -2,6 +2,9 @@
 
 .projectsDetail{
     margin-top: 25rem;
+    @media (min-width: 700px){
+		margin-top: 15rem;
+	}
     .card__detail{
         padding: 0.5rem;
         margin: 1rem;

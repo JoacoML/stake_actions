@@ -1,9 +1,13 @@
 .cartList{
-    margin-top: 14rem;
+    margin-top: 25rem;
     display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    align-content: center;
+    @media (min-width: 700px){
+		margin-top: 13rem;
+	}
     .itemCart{
         border-radius: 15px;
         padding: 0.5rem;
@@ -18,7 +22,6 @@
         }
         .itemCart-body{
             margin: 1rem;
-            margin-left: 3rem;
             color: white;
             text-decoration: none;
             .itemCart-title{
@@ -26,7 +29,7 @@
                 font-weight: bold;
             }
             p{
-                font-size: 3rem;
+                font-size: 2rem;
             }
             .btn{
                 font-size: 2rem;
@@ -37,7 +40,7 @@
     }
     p{
         margin: 2rem;
-        font-size: 4rem;
+        font-size: 3rem;
         color: white;
     }
     .btn{

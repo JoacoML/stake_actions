@@ -14,10 +14,12 @@ const ItemListContainer = ({greeting}) => {
     if (typeId) {
       const queryFilter = query(queryCollection, where('type', '==', typeId))
       getDocs(queryFilter)
-        .then(res => setProjectList(res.docs.map(project => ({ id: project.id, ...project.data() }))));  
+        .then(res => setProjectList(res.docs.map(project => ({ id: project.id, ...project.data() }))))
+        .catch(error => alert(error))
     }else{
       getDocs(queryCollection)
-        .then(res => setProjectList(res.docs.map(project => ({ id: project.id, ...project.data() }))));
+        .then(res => setProjectList(res.docs.map(project => ({ id: project.id, ...project.data() }))))
+        .catch(error => alert(error))
     }    
   },[typeId])
   
