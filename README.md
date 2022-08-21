@@ -17,6 +17,11 @@ This order is stored in Firestore, providing the user with its tracking number.
 
 Interface:
 
+<img width="1440" alt="Actions_home" src="./src/assets/img/Actions_home.png">
+
+<img width="1440" alt="Actions_home" src="./src/assets/img/project_detail.png">
+
+<img width="1440" alt="Actions_home" src="./src/assets/img/Actions_cart.png">
 
 Installstion:
 
